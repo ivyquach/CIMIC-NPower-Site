@@ -1,0 +1,68 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Application Form</title>
+</head>
+
+<body>
+	<!-- Need a way to populate and store information so that it's saved in a file that's neat-->
+	<!-- This page should be setup eventually in a way that is dynamic and open to change, like regions if possible.-->
+	<div id="container">
+		<form method="get">
+			<h1> Technology Service Corps-Canada Interest Form</h1>
+			
+			<article id="intro">
+			Thank you for your interest in NPower's Canada Technology Service Corps program, located in Toronto. As an initial step in the application process, please fill out the information below. Once your responses are submitted and evaluated, an NPower representative will follow-up with information on your eligibility and next steps in the application process. 
+			
+			<br><br>
+			
+			If there are any questions, please contact Carly Dwyer, Administrative and Communications Coordinator, at <mark>carly.dwyer@npowercanada.ca <mark>.
+			</article><br>
+			
+		<!-------------------NEXT SECTION- GENERAL INFORMATION -------------------------->
+		
+			<article id="general information">
+			First Name*: 
+				<input type="text" placeholder="First Name" required> <br>
+			Last Name*: 
+				<input type="text" placeholder="Last Name" required><br>
+			Date of Birth*: 
+				<input type="text" placeholder="MM/DD/YYYY" required><br> <!--Can use calender map with JS? or set a format using pattern?-->
+			Address: 
+				<input type="text" placeholder="Address"><br>
+			City: 
+				<input type="text" placeholder="City"><br>
+			Province*:  
+				<input type="text" placeholder="Province" required>
+			Postal Code: 
+				<input type="text" placeholder="Postal Code"> <!--Need to find a way to validate and set the format for postal code-->
+			Phone Number: 
+				<input type="text" placeholder="Phone Number">
+			Neighbourhood: 	
+				<select name="neighbourhood" required> <!-- Temporarily a dropdown list. Need a way to alphabetize, if it's not entered alphabetically or to make this more dynamic for updating the list, look into excel/relational tables or lists-->
+						<option value="1"> Please Select...</option> <!-- Need a way to make this first one an unavailable option to pick from-->
+						<option value="2"> Durham Region</option>
+						<option value="3"> East York </option>
+						<option value="4"> Etobicoke </option>
+						<option value="5"> North York </option>
+						<option value="6"> Peel Region </option>
+						<option value="7"> Scarborough </option>
+						<option value="8"> Toronto </option>
+						<option value="9"> York Region </option> 
+					</select><br> <br>
+			
+			How do you prefer to be contacted: 	<br>
+				<select name="test"> 
+						<option value="None"> Please Select...</option>
+						<option value="DH"> Home Phone</option>
+						<option value="EY"> Cell Phone </option>
+						<option value="ET"> Email </option>
+				</select>
+			</article>
+			
+			<!-----------------NEXT SECTION-EDUCATION --------------------->
+	</div>
+</body>
+
+<html>

@@ -1,0 +1,150 @@
+/* This rule removes the margin at the top of the body, and aligns content to the center */
+body{ 
+	margin-top:0px;/*top margin is 0*/
+	text-align:center; /*This aligns the text to the center*/
+	}
+
+
+/* Set the height, width and margin of the container to the dimensions below */
+#container{
+	width:1000px;
+	height:/*px; no height defined so it adjust for different amount of information*/;
+	margin: 0px auto;
+	
+}
+
+#top_header{
+	background:lightblue;
+	padding:10px
+	}
+
+
+ul { 
+    list-style-type: none; /*makes the bullets in the list disappear*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b8e5f7;
+}
+
+li { /*The items in the navigation menu*/
+    float: left;
+}
+
+li a, .dropbtn { /*This is the dropdown list within each listed item in the nav menu*/ 
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; /* if we were to use relative, the dropdown would include the color of the parent container and shift other nav items over, unpleasant looking*/
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Styling the dropdown content links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Styling for links when hovered over */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Styling for when hovered over */
+.dropdown:hover .dropdown-content {
+    display: block;
+}	
+
+/* #main_ */section{
+	background: lightgreen; /*makes the background of this section green*/
+	float: right;/*moves the entire block to the right*/
+	width:800px; /*makes the width of this box a little longer*/
+	height:100%;
+}
+
+/* The "Article" is nested inside the "section", so the background is green while the article portion is yellow*/
+article {
+	border:1px solid black;/*adds a solid black border with 1px size, starting from #px, style, color*/
+	margin:20px;/*margin set to 20px*/
+	padding: 10px;
+	background:yellow;
+	}
+
+
+
+#side_news{
+	padding-top:20px;
+	background: pink;
+	height: 100%;/* the 100% takes up entire height "of the page", not to the px dimension*/
+	width:199px;
+;	}
+
+
+
+
+/*----------------------------------- The stuff below is the footer -----------------------------*/
+
+footer {
+/* 	position: absolute */;
+	left: 0;
+	width: 100%;
+	background: lightgreen /* #222 */;
+}
+
+
+footer div {
+	display: table;
+	margin: 0 auto;
+	padding: 44px 0;
+	width: 1000px; /*Changed width from 940px to 100%*/
+	color: black/* #777 */;
+	}
+	
+footer div section {
+	display: table-cell;
+	width: 300px;
+		}
+		
+footer div #about, footer div #blogroll {
+	padding-right: 20px;
+}
+
+footer h3 {
+	color: /* #FFF */ black;
+}
+
+footer #footlink{
+	color: #999;
+}
+
+footer #footlink{
+	color: #FFF;
+	text-decoration: none;
+}
+
+{
+	margin: 0 0 0 40px;
+	list-style: square;
+	color: #565656;
+}
+
+footer ul li a {
+	display: block;
+} 
